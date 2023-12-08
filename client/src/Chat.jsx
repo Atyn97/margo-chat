@@ -139,9 +139,9 @@ export default function Chat() {
       <div className="flex w-full lg:w-[90%] lg:h-[90%] lg:m-auto bg-sky-600 rounded-lg">
         <div
           className={
-            "bg-white w-full sm:w-2/4 md:w-1/4 flex flex-col md:rounded-tl-lg md:rounded-bl-lg " +
+            "bg-white w-full sm:w-2/4 md:w-1/4 flex flex-col lg:rounded-tl-lg lg:rounded-bl-lg " +
             (selectedUserId &&
-              "hidden sm:flex bg-whitesm:w-2/4 md:w-1/4 flex-col md:rounded-tl-lg md:rounded-bl-lg")
+              "hidden sm:flex bg-whitesm:w-2/4 md:w-1/4 flex-col lg:rounded-tl-lg lg:rounded-bl-lg")
           }
         >
           <div className="flex-grow ">

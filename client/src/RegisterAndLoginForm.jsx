@@ -35,7 +35,7 @@ export default function RegisterAndLoginForm() {
           </h2>
         </div>
       </div>
-      <div className="flex m-10 py-20 items-center justify-center bg-white md:py-24 md:ml-20 rounded-lg shadow-lg">
+      <div className="flex m-10 py-20 items-center justify-center bg-white md:py-20 md:ml-20 rounded-lg shadow-lg">
         <form className="mx-10 w-64 sm:mx-20 mb-4" onSubmit={handleSubmit}>
           <input
             value={username}
