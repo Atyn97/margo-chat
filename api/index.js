@@ -14,7 +14,7 @@ dotenv.config();
 mongoose.connect(process.env.MONGODB_URL);
 const jwtSecret = process.env.JWT_SECRET;
 const bcryptSalt = bcrypt.genSaltSync(10);
-const port = process.env.PORT || 4000;
+const port = "https://margo-chat-server.vercel.app/";
 
 const app = express();
 
