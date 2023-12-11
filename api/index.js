@@ -22,14 +22,23 @@ app.use(express.json());
 app.use(cookieParser());
 app.use("/uploads", express.static(__dirname + "/uploads"));
 
+app.options("/", (req, res) => {
+  res.setHeader(
+    "Access-Control-Allow-Origin",
+    "https://margo-chat.vercel.app/"
+  );
+  res.setHeader("Access-Control-Allow-Methods", "POST, GET, PUT");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+  res.sendStatus(204);
+});
+
 // Allow all origins
 app.use(cors());
 // Allow specific origins(s)
 app.use(
   cors({
     credentials: true,
-    origin: "*",
-    methods: "GET",
+    origin: "https://margo-chat.vercel.app/",
   })
 );
 
