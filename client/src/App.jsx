@@ -5,7 +5,7 @@ import Routes from "./Routes";
 
 function App() {
   axios.defaults.baseURL = "https://margo-chat-server.vercel.app/";
-  axios.defaults.withCredentials = false;
+  axios.defaults.withCredentials = true;
 
   return (
     <UserContextProvider>
