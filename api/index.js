@@ -14,6 +14,7 @@ dotenv.config();
 mongoose.connect(process.env.MONGODB_URL);
 const jwtSecret = process.env.JWT_SECRET;
 const bcryptSalt = bcrypt.genSaltSync(10);
+const port = process.env.PORT || 5000;
 
 const app = express();
 
@@ -127,8 +128,8 @@ app.post("/logout", async (req, res) => {
   res.cookie("token", "", { sameSite: "none", secure: true }).json("ok");
 });
 
-const server = app.listen("https://margo-chat-server.vercel.app/", function () {
-  console.log("Server is running at margo-chat-server");
+const server = app.listen(port, () => {
+  console.log(`Server is listening on port ${port}`);
 });
 
 const wss = new ws.WebSocketServer({ server });
