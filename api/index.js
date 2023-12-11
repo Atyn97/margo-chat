@@ -127,8 +127,8 @@ app.post("/logout", async (req, res) => {
   res.cookie("token", "", { sameSite: "none", secure: true }).json("ok");
 });
 
-const server = app.listen("https://margo-chat.vercel.app/", function () {
-  console.log("Server is running at port 4000");
+const server = app.listen("https://margo-chat-server.vercel.app/", function () {
+  console.log("Server is running at margo-chat-server");
 });
 
 const wss = new ws.WebSocketServer({ server });
