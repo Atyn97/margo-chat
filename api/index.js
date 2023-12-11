@@ -26,7 +26,7 @@ app.use("/uploads", express.static(__dirname + "/uploads"));
 app.use(function (request, response, next) {
   response.header(
     "Access-Control-Allow-Origin",
-    "https://margo-chat.vercel.app"
+    "https://margo-chat.vercel.app/"
   );
   response.header(
     "Access-Control-Allow-Headers",
@@ -41,7 +41,7 @@ app.use(function (request, response, next) {
 app.use(
   cors({
     credentials: true,
-    origin: "https://margo-chat.vercel.app/",
+    origin: "https://margo-chat.vercel.app",
   })
 );
 
