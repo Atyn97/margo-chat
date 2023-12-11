@@ -21,11 +21,13 @@ app.use(express.json());
 app.use(cookieParser());
 app.use("/uploads", express.static(__dirname + "/uploads"));
 
-// to give information which site we communicating
+// Allow all origins
+app.use(cors());
+// Allow specific origins(s)
 app.use(
   cors({
     credentials: true,
-    origin: process.env.CLIENT_URL,
+    origin: "https://margo-chat.vercel.app/",
   })
 );
 
