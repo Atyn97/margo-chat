@@ -41,7 +41,7 @@ app.use(function (request, response, next) {
 app.use(
   cors({
     credentials: true,
-    origin: [process.env.CLIENT_URL, "https://margo-chat.vercel.app/"],
+    origin: "https://margo-chat.vercel.app/",
   })
 );
 
