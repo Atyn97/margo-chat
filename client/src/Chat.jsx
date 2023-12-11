@@ -23,7 +23,7 @@ export default function Chat() {
   function connectToWs() {
     // to always connect to WebSocket, even if we change something in index.js(api)
     // we will always be connected to WebSocket, and the online user will not disappear
-    const ws = new WebSocket("ws://margo-chat-server.vercel.app/");
+    const ws = new WebSocket("ws://https://margo-chat-server.vercel.app/");
     setWs(ws);
     ws.addEventListener("message", handleMessage);
     // try to reconnect in case it is disconnected
