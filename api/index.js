@@ -29,6 +29,7 @@ app.use(
   cors({
     credentials: true,
     origin: "https://margo-chat.vercel.app/",
+    methods: "GET",
   })
 );
 
