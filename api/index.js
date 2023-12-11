@@ -127,7 +127,7 @@ app.post("/logout", async (req, res) => {
   res.cookie("token", "", { sameSite: "none", secure: true }).json("ok");
 });
 
-const server = app.listen(process.env.PORT, function () {
+const server = app.listen("https://margo-chat.vercel.app/", function () {
   console.log("Server is running at port 4000");
 });
 
