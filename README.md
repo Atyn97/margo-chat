@@ -3,7 +3,7 @@
 ## Table of contents
 
 - [Overview](#overview)
-  - [Description](#description)
+  - [Basic features](#basic-features)
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
@@ -12,9 +12,8 @@
 
 ## Overview
 
-### Description
+### Basic features
 
-This application contains, authentication system with json web tokens and bycrypt.
 - Users can register/login via username and password.
 - Users can see online status.
 - Chatting is real-time.
@@ -32,12 +31,12 @@ This application contains, authentication system with json web tokens and bycryp
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Bootstrap 5
-- Javascript
-- JQuery
+- React and TailwindCSS for the frontend
+- Authentication system with json web tokens and bycrypt.
+- Node/Express for creating API endpoints
+- MongoDB for storing chat room members and their messages
+- Websocket for making the app real-time
 
 ## Author
 
-- Fatin Nooraina - [@Atyn97](https://www.frontendmentor.io/profile/Atyn97)
+- Fatin Nooraina - [@Atyn97](https://github.com/Atyn97)
