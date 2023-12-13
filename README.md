@@ -1,4 +1,5 @@
 # Margo Chat Application
+Built a fully responsive real-time chat application with MERN Stack and TailwindCSS
 
 ## Table of contents
 
@@ -21,7 +22,9 @@
 ### Screenshot
 
 ![](./MargoChat3.png)
+
 ![](./MargoChat2.png)
+
 ![](./MargoChat.png)
 
 ### Links
