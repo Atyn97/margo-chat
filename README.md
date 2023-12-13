@@ -20,7 +20,7 @@
 
 ### Screenshot
 
-![](./Capture.PNG)
+![](./MargoChat.png)
 
 ### Links
 
